@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: sales_pg
+    environment:
+      - POSTGRES_USER: ADMIN
+      - POSTGRES_PASSWORD: ADMIN
+      - POSTGRES_DB: analytics
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_sales:/var/lib/postgresql/data
+
+volumes:
+  pgdata_sales:
