@@ -191,7 +191,7 @@ with col1:
         font=dict(color='#9090a0'), height=320,
         margin=dict(l=0,r=60,t=40,b=0),
         xaxis=dict(gridcolor='#1a1a1e', showticklabels=False),
-        yaxis=dict(gridcolor='transparent')
+        yaxis=dict(gridcolor='rgba(0,0,0,0)')
     )
     st.plotly_chart(fig_cat, use_container_width=True)
 
